@@ -39,9 +39,11 @@ public class SquareDragAndDrop : SquareHeritage
         {
             hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
         }
-        else return;
-
-        Debug.Log("ray obj : " + hit.transform.gameObject);
+        else
+        {
+            Undrag();
+            return;
+        }
 
             if (hit.transform.gameObject != this.gameObject)
             {

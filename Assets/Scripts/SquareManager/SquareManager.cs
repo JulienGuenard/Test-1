@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class SquareManager : SquareManagerHeritage
 {
-	[HideInInspector] public List<GameObject> squareList;
+	public List<Square> squareList;
 	
     override public void Awake()
     {
         base.Awake();
-    }
-
-    void Update()
-    {
-        
     }
 }

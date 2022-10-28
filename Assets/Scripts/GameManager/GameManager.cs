@@ -11,10 +11,10 @@ public class GameManager : GameManagerHeritage
 
     void Update()
     {
-        Action();
+
     }
 
-    void Action()
+    public void Victory()
     {
 
     }
